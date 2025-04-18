@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "H1BSpons",
+  "version": "1.0",
+  "description": "H1B Sponsorship and job recommendations",
+  "permissions": ["storage", "identity"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.linkedin.com/jobs/*",
+        "https://*.indeed.com/*",
+        "https://*.glassdoor.com/*"
+      ],
+      "js": ["extension.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "firebase-app-compat.js",
+        "firebase-auth-compat.js",
+        "firebase-config.js",
+        "popup.js",
+        "report.html",
+        "report.js",
+        "google-api.js"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Report Issue</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+      }
+      textarea {
+        width: 100%;
+        height: 100px;
+        margin-top: 10px;
+      }
+      button {
+        margin-top: 10px;
+        padding: 10px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Report Misinformation</h3>
+    <p id="userEmail"></p>
+    <p id="companyName"></p>
+    <textarea id="feedback" placeholder="Describe the issue..."></textarea>
+    <button id="submitReport">Submit Report</button>
+    <p id="statusMsg" style="color: green"></p>
+
+    <script src="firebase-app-compat.js"></script>
+    <script src="firebase-auth-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="report.js"></script>
+  </body>
+</html>

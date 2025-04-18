@@ -1,0 +1,16 @@
+/* Styling for the H1B Info button */
+.h1b-info-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.h1b-info-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
