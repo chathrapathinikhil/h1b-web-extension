@@ -18,7 +18,7 @@ This extension enhances job listings by adding a dynamic **"H1B Info"** button n
 - 🔐 **Authentication flow**: Only allows users with verified `.edu` email addresses
 - 💾 **Secure local storage**: Keeps login state in Chrome’s storage
 - 📥 **Report issue form**: Let users submit data inaccuracies directly to the developer’s inbox
-- 🧠 **Company Insights**: Tech stack & industry news pulled from Crunchbase and news APIs
+- 🧠 **Company Insights**: Industry news pulled from news APIs
 - ⚙️ **Extension auto-reactivity**: Listens for job changes and re-injects button accordingly
 
 ## 🧰 Tech Stack
@@ -28,7 +28,6 @@ This extension enhances job listings by adding a dynamic **"H1B Info"** button n
 - **Database**: SQL Server (H1B dataset)
 - **Auth**: Firebase Auth (with email verification)
 - **APIs Used**:
-  - Crunchbase ODM API
   - News API (or TheNewsAPI)
   - Internal SQL endpoints for H1B trends
 
